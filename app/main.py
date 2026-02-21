@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-import mlflow.pyfunc
+#import mlflow.pyfunc
 
 app = FastAPI()
 
-model = mlflow.pyfunc.load_model("models:/model/Production")
+# model = mlflow.pyfunc.load_model("models:/model/Production")
 
 @app.get("/")
 def root():
